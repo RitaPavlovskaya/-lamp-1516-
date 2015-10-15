@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form of registration</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="boxRegistration">
+        <h2>Join us!</h2>
+        <form name="contacts" method="post" id="contactsUser" onsubmit="returm check();">
+            <div class="contactField">
+                <input type="text" name="email" class="dataInputs" maxlength="30" id="editEMail" placeholder="E-mail" required>
+                <span class="obligatoryField">*</span>
+            </div>
+            <div class="contactField">
+                <input type="password" name="password" class="dataInputs" maxlength="10" id="editPassword" placeholder="Password" required>
+                <span class="obligatoryField">*</span>
+            </div>
+            <div class="contactField">
+                <input type="password" name="checkPassword" class="dataInputs" maxlength="10" id="checkPassword" placeholder="Enter password again" required>
+                <span class="obligatoryField">*</span>
+            </div>
+
+            <div class="obligatoryField">
+                <p>* Required fields </p>
+            </div>
+            <div class="additionallyField">
+                <textarea name="aboutUser" placeholder="Something about you" cols="60" rows="5" id="editAboutUser" onkeypress="counter(this);" onkeyup="counter(this);" onchange="counter(this);"></textarea>
+                <span id="count"></span><span id="kb"></span> symbols
+            </div>
+            <div class="additionallyField">
+                <input type="radio" name="sex" value="male">Male
+                <input type="radio" name="sex" value="female">Female
+            </div>
+            <input type="submit" value="Send" class="sendSubmit" onsubmit="returm check();">
+        </form>
+
+    </div>
+
+</body>
+
+</html>

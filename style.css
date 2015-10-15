@@ -1,0 +1,86 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #CC9966;
+    font:1em verdana, normal;
+}
+#boxRegistration{
+    position: relative;
+    width:350px;
+    height: 430px;
+    margin:auto;
+    margin-top:150px;
+    padding: 30px;
+    background-color: #FFCC99;
+    border-radius: 30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);    
+}
+#boxRegistration h2{
+    text-align: center;
+    margin-top: 0;
+    width: auto;
+    font:3em verdana, normal;
+    text-shadow: 3px 3px 0px rgba(0,0,0, 0.2);    
+    border-bottom:1px dotted #663300;
+}
+
+.contactField{
+    border-bottom:1px dotted #663300;
+}
+.contactField, .additionallyField{
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    width: 300px;
+    padding: 10px;    
+}
+.dataInputs{
+    background-color: transparent;
+    border-style: none; 
+    color: #663300;
+    position: relative;
+    left:25%;
+    margin: auto; 
+}
+.obligatoryField{
+    color:red;
+    position: relative;
+    float: right;
+    font-size: 0.6em;
+}
+.sendSubmit{
+    position: relative;
+    display: inline-block;
+    float: right;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #339933;
+    border-style: none;
+    color: #003300;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+}
+#count{
+    visibility: hidden;
+}
+#counterSymbols{
+    font-size:0.75em;
+}
+
+#editAboutUser{
+    width:300px;
+    background-color: rgba(255,255,255,0.5);
+    border-style: none;    
+    border-radius:10px;
+}
+::-webkit-input-placeholder{
+    border-style: none; 
+    color: #663300;
+    font-style: italic;
+}
+*:focus {
+    outline: none;
+}
