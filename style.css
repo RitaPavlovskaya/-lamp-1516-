@@ -4,12 +4,13 @@ html, body{
 }
 body{
     background-color: #CC9966;
+    background-image: url(images/wood.jpg);
     font:1em verdana, normal;
 }
 #boxRegistration{
     position: relative;
     width:350px;
-    height: 430px;
+    height: 470px;
     margin:auto;
     margin-top:150px;
     padding: 30px;

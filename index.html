@@ -11,7 +11,11 @@
 <body>
     <div id="boxRegistration">
         <h2>Join us!</h2>
-        <form name="contacts" method="post" id="contactsUser" onsubmit="returm check();">
+        <form name="contacts" method="post" action="form.php" id="contactsUser" onSubmit="returm check();">
+             <div class="contactField">
+                <input type="userName" name="userName" class="dataInputs" maxlength="30" id="editUserName" placeholder="Enter your name" required>
+                <span class="obligatoryField">*</span>
+            </div>
             <div class="contactField">
                 <input type="text" name="email" class="dataInputs" maxlength="30" id="editEMail" placeholder="E-mail" required>
                 <span class="obligatoryField">*</span>
@@ -20,11 +24,6 @@
                 <input type="password" name="password" class="dataInputs" maxlength="10" id="editPassword" placeholder="Password" required>
                 <span class="obligatoryField">*</span>
             </div>
-            <div class="contactField">
-                <input type="password" name="checkPassword" class="dataInputs" maxlength="10" id="checkPassword" placeholder="Enter password again" required>
-                <span class="obligatoryField">*</span>
-            </div>
-
             <div class="obligatoryField">
                 <p>* Required fields </p>
             </div>
